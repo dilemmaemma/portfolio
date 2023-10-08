@@ -37,6 +37,11 @@ function RenderLandingPage(props) {
                 }
             </div>
             </div>
+            <div>
+            <p onClick={() => scrollToTop()} className="back-to-top">
+                Back To Top ^
+            </p>
+            </div>
         </div>
     );
 }
