@@ -7,14 +7,11 @@ const { primary_accent_color } = colors;
 
 function SubFooter() {
     const { Footer } = Layout;
-    const base_url = 'https://www.humanrightsfirst.org';
+    const base_url = 'http://localhost:3000'; // Change this before releasing production version
     const button_links_by_text = {
-      'About Us': `${base_url}/about`,
-      'Contact Us': `${base_url}/about/contact`,
-      Press: `${base_url}/press`,
+      'About Me': `${base_url}/about`,
+      'Contact': `${base_url}/about/contact`,
       'Terms & Privacy': `${base_url}/about/privacy-policy`,
-      'Sign Up': `${base_url}/sign-up`,
-      Careers: `${base_url}/careers`,
     };
     return (
       <Footer
