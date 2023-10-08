@@ -2,6 +2,12 @@ import React from 'react';
 import '../../../styles/About.less';
 
 const About = () => {
+
+    const scrollToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      };
+
     return (
         <div className='about-me-page'>
             <header className='page-header'>
@@ -42,6 +48,11 @@ const About = () => {
                         Vestibulum suscipit ante sit amet lorem fringilla, non laoreet purus volutpat. Fusce eget vehicula tortor.
                     </p>
                 </section>
+                <div>
+                    <p onClick={() => scrollToTop()} className="back-to-top">
+                        Back To Top ^
+                    </p>
+                </div>
             </main>
             {/* <div className='aboutMe'>
                 <h1>About Me:</h1>

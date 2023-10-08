@@ -15,8 +15,8 @@ import Support from './components/pages/Support/Support';
 import Settings from './components/pages/Settings/Settings';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import FooterContent from './components/Layout/FooterContent';
-import SubFooter from './components/Layout/SubFooter';
-import HeaderContent from './components/Layout/Header';
+import SubFooter from './components/Layout/SubFooter.jsx';
+import HeaderContent from './components/Layout/MainHeader.jsx';
 
 import { Layout } from 'antd';
 import { colors } from './styles/data_vis_colors';

@@ -1,12 +1,22 @@
 import React from 'react';
+import ProjectsHeader from '../../Layout/ProjectsHeader.jsx';
 import { projects } from '../../../data/projects';
 import { useAuth0 } from '@auth0/auth0-react';
 import '../../../styles/RenderLandingPage.less';
 
 function Project () {
     const { isAuthenticated } = useAuth0();
+
+    const scrollToTop = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+
     return (
         <div className='projects'>
+            <header>
+                <ProjectsHeader />
+            </header>
             <div className='project-select'>
                 {projects.map((project) => (
                     <div
@@ -89,6 +99,11 @@ function Project () {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div>
+                <p onClick={() => scrollToTop()} className="back-to-top" style={{ color: 'white' }}>
+                    Back To Top ^
+                </p>
             </div>
         </div>
     );

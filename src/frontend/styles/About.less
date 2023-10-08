@@ -1,75 +1,79 @@
+@main-color: #7C8BAD;
+@secondary-color: #80B7DD;
+@link-color: #333;
+@link-hover-color: #CEDBF5;
+@white: #FFFFFF;
+@mobile-small: ~"(min-width: 320px) and (max-width: 375px)";
+@mobile-medium: ~"(min-width: 376px) and (max-width: 414px)";
+@mobile-large: ~"(min-width: 415px) and (max-width: 480px)";
+@tablet-small: ~"(min-width: 481px) and (max-width: 768px)";
+@tablet-large: ~"(min-width: 769px) and (max-width: 1024px)";
+@laptop: ~"(min-width: 1025px) and (max-width: 1280px)";
+
 /* Reset some default styles */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-  }
+}
   
-  /* Apply a global font family and background color */
-  body {
+/* Apply a global font family and background color */
+body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-  }
+}
   
-  /* Style the header section */
-  .page-header {
-    background-color: #0078d4;
-    color: #fff;
+/* Style the header section */
+.page-header {
+    background-color: @main-color;
+    color: @white;
     text-align: center;
     padding: 20px;
-  }
+}
   
-  .page-header h1 {
+.page-header h1 {
     font-size: 2em;
-  }
+}
   
-  /* Style the navigation menu */
-  .page-header nav ul {
+/* Style the navigation menu */
+.page-header nav ul {
     list-style: none;
     padding: 0;
-  }
+}
   
-  .page-header nav ul li {
+.page-header nav ul li {
     display: inline;
     margin-right: 20px;
-  }
+}
   
-  .page-header nav ul li:last-child {
+.page-header nav ul li:last-child {
     margin-right: 0;
-  }
+}
   
-  .page-header nav ul li a {
+.page-header nav ul li a {
     text-decoration: none;
     color: #fff;
-  }
+}
   
-  /* Style the main content section */
-  .page-content {
+/* Style the main content section */
+.page-content {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  /* Style individual sections */
-  .section {
+/* Style individual sections */
+.section {
     margin-bottom: 20px;
-  }
+}
   
-  .section h2 {
+.section h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
-  }
+}
   
-  .section p {
+.section p {
     line-height: 1.6;
-  }
-  
-  /* Style the footer section */
-  .page-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #0078d4;
-    color: #fff;
-  }
+}
   

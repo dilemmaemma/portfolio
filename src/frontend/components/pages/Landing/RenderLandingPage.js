@@ -22,20 +22,20 @@ function RenderLandingPage(props) {
   
     return (
         <div className="main">
-            <div className="header">
-            <div className="header-text-container">
-                <h1>Emma's Portfolio Page</h1>
-                <h3>
-                    This website showcases Emma's projects, whether they be personal, collab, or school related through BloomTech. Thanks for stopping by!
-                </h3>
-                <h3>
-                    If you would like to download code directly from the site or demo the code, please create an account first. Otherwise, you can go through GitHub to view the code.
-                </h3>
-                <LoginButton />
-                {
-                    isAuthenticated && <LogoutButton />
-                }
-            </div>
+            <div className="lh header">
+                <div className="header-text-container">
+                    <h1>Emma's Portfolio Page</h1>
+                    <h3>
+                        This website showcases Emma's projects, whether they be personal, collab, or school related through BloomTech. Thanks for stopping by!
+                    </h3>
+                    <h3>
+                        If you would like to download code directly from the site or demo the code, please create an account first. Otherwise, you can go through GitHub to view the code.
+                    </h3>
+                    <LoginButton />
+                    {
+                        isAuthenticated && <LogoutButton />
+                    }
+                </div>
             </div>
             <div>
             <p onClick={() => scrollToTop()} className="back-to-top">

@@ -1,61 +1,71 @@
-#error {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden; /* Prevents scrollbars */
+/* Font imports for Acumin Pro Italic */
+@font-face {
+    font-family: 'AcuminProItalic';
+    src: url('./assets/Fonts/Acumin_Pro_Italic/Acumin_Pro_Italic.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Acumin_Pro_Italic/Acumin_Pro_Italic.woff2') format('woff2'),
+         url('./assets/Fonts/Acumin_Pro_Italic/Acumin_Pro_Italic.woff') format('woff'),
+         url('./assets/Fonts/Acumin_Pro_Italic/Acumin_Pro_Italic.ttf') format('truetype');
 }
 
-.image-container {
-    position: relative;
-    flex: 1;
-    overflow: hidden;
+/* Font imports for Acumin Pro Medium */
+@font-face {
+    font-family: 'AcuminProMedium';
+    src: url('./assets/Fonts/Acumin_Pro_Medium/Acumin_Pro_Medium.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Acumin_Pro_Medium/Acumin_Pro_Medium.woff2') format('woff2'),
+         url('./assets/Fonts/Acumin_Pro_Medium/Acumin_Pro_Medium.woff') format('woff'),
+         url('./assets/Fonts/Acumin_Pro_Medium/Acumin_Pro_Medium.ttf') format('truetype');
 }
 
-.full-screen-image {
-    width: 100%; /* Cover entire container width */
-    height: 100%; /* Maintain aspect ratio */
-    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
-}
-  
-.overlay-text {
-    position: absolute;
-    top: 50%; /* Adjust to vertically center the text */
-    left: 50%; /* Adjust to horizontally center the text */
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.7); /* Background color with opacity */
-    color: #ffffff; /* Text color */
-    padding: 10px; /* Padding around the text */
-    border-radius: 5px; /* Rounded corners for the overlay */
-    font-family: 'Roboto', 'Geneva', Verdana, sans-serif;
-}
-  
-.overlay-text h1 {
-    font-size: 3rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+/* Font imports for Acumin Pro Medium Italic */
+@font-face {
+    font-family: 'AcuminProMediumItalic';
+    src: url('./assets/Fonts/Acumin_Pro_Medium_Italic/Acumin_Pro_Medium_Italic.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Acumin_Pro_Medium_Italic/Acumin_Pro_Medium_Italic.woff2') format('woff2'),
+         url('./assets/Fonts/Acumin_Pro_Medium_Italic/Acumin_Pro_Medium_Italic.woff') format('woff'),
+         url('./assets/Fonts/Acumin_Pro_Medium_Italic/Acumin_Pro_Medium_Italic.ttf') format('truetype');
 }
 
-.btn {
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 6px;
-    background-color: #80B7DD;
-    color: #FFFFFF;
-    font-family: 'acumin-pro', sans-serif;
-    font-weight: 500;
-    height: 30%;
-    font-size: 3vh;
-    font-family: 'Roboto', 'Geneva', Verdana, sans-serif;
-    padding: 1.5% 3% 1.5% 3%;
-    cursor: pointer;
+/* Font imports for Acumin Pro Regular */
+@font-face {
+    font-family: 'AcuminProRegular';
+    src: url('./assets/Fonts/Acumin_Pro_Regular/Acumin_Pro_Regular.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Acumin_Pro_Regular/Acumin_Pro_Regular.woff2') format('woff2'),
+         url('./assets/Fonts/Acumin_Pro_Regular/Acumin_Pro_Regular.woff') format('woff'),
+         url('./assets/Fonts/Acumin_Pro_Regular/Acumin_Pro_Regular.ttf') format('truetype');
 }
 
-.btn:hover {
-    background-color: #FFFFFF;
-    color: black;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}  
+/* Font imports for Beatrice Regular */
+@font-face {
+    font-family: 'BeatriceRegular';
+    src: url('./assets/Fonts/Beatrice_Regular/Beatrice_Regular.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Beatrice_Regular/Beatrice_Regular.woff2') format('woff2'),
+         url('./assets/Fonts/Beatrice_Regular/Beatrice_Regular.woff') format('woff'),
+         url('./assets/Fonts/Beatrice_Regular/Beatrice_Regular.ttf') format('truetype');
+}
+
+/* Font imports for Moneta Bold */
+@font-face {
+    font-family: 'MonetaBold';
+    src: url('./assets/Fonts/Moneta_Bold/Moneta_Bold.otf') format('embedded-opentype'),
+         url('./assets/Fonts/Moneta_Bold/Moneta_Bold.woff2') format('woff2'),
+         url('./assets/Fonts/Moneta_Bold/Moneta_Bold.woff') format('woff'),
+         url('./assets/Fonts/Moneta_Bold/Moneta_Bold.ttf') format('truetype');
+}
+
+/* This is where we define the CSS fonts as global variables to be referenced later */
+:root {
+    --primary-color-white: #FFFFFF;
+    --primary-color-grey: #7C8BAD;
+    --primary-color-blue: #80B7DD;
+
+    --secondary-color-glaucous: #5E82B1;
+    --secondary-color-lavender: #CEDBF5;
+    --secondary-color-blue: #ADE6FE;
+
+    --font-acumin-pro-italic: 'AcuminProItalic';
+    --font-acumin-pro-medium: 'AcuminProMedium';
+    --font-acumin-pro-medium-italic: 'AcuminProMediumItalic';
+    --font-acumin-pro-regular: 'AcuminProRegular';
+    --font-beatrice-regular: 'BeatriceRegular';
+    --font-moneta-bold: 'MonetaBold';
+}
