@@ -6,7 +6,7 @@ const LogoutButton = () => {
   const { logout } = useAuth0();
   return (
     <button
-      className="btn"
+      className="bttn"
       onClick={() =>
         logout({
           logoutParams: {
