@@ -8,7 +8,7 @@ import {
 import 'antd/dist/antd.less';
 import NotFoundPage from './components/pages/NotFound/NotFoundPage';
 import LandingPage from './components/pages/Landing/RenderLandingPage';
-import About from './components/pages/About/About';
+import About from './components/pages/About/About.jsx';
 import Project from './components/pages/Project/Project';
 import Dashboard from './components/pages/Auth0/Dashboard';
 import Support from './components/pages/Support/Support';
@@ -21,7 +21,7 @@ import HeaderContent from './components/Layout/Header';
 import { Layout } from 'antd';
 import { colors } from './styles/data_vis_colors';
 
-const { primary_accent_color } = colors;
+const { primary_accent_color, background_color } = colors;
 
 const root = createRoot(document.getElementById('root'));
 
@@ -52,7 +52,7 @@ export function App() {
                 height: '10vh',
                 display: 'flex',
                 alignItems: 'center',
-                backgroundColor: primary_accent_color,
+                backgroundColor: background_color,
             }}
             >
                 <HeaderContent />

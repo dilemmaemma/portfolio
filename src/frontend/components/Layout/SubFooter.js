@@ -10,8 +10,8 @@ function SubFooter() {
     const base_url = 'http://localhost:3000'; // Change this before releasing production version
     const button_links_by_text = {
       'About Me': `${base_url}/about`,
-      'Contact': `${base_url}/about/contact`,
-      'Terms & Privacy': `${base_url}/about/privacy-policy`,
+      'Contact': `${base_url}/about#contact`,
+      'Terms & Privacy': `${base_url}/about#terms`,
     };
     return (
       <Footer

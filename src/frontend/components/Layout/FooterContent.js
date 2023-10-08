@@ -1,6 +1,6 @@
 import { Space, Typography, Image } from 'antd';
 import React, { useState } from 'react';
-import Logo from '../../styles/Images/TechImage.png';
+import Logo from '../../styles/assets/Logos/TechImage.png';
 import { phoneNumber, email, linkStyle, linkStyleHover, linkEmailStyle, linkEmailStyleHover, linkPhoneStyle, linkPhoneStyleHover, city, state } from '../../data/info';
 
 import '../../styles/RenderLandingPage.less';
