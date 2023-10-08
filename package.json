@@ -104,5 +104,6 @@
       "eslint --fix",
       "prettier-eslint --write"
     ]
-  }
+  },
+  "homepage": "."
 }
