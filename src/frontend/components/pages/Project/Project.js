@@ -1,8 +1,10 @@
 import React from 'react';
 import { projects } from '../../../data/projects';
-import '../../../styles/RenderLandingPage.less'
+import { useAuth0 } from '@auth0/auth0-react';
+import '../../../styles/RenderLandingPage.less';
 
 function Project () {
+    const { isAuthenticated } = useAuth0();
     return (
         <div className='projects'>
             <div className='project-select'>
@@ -69,16 +71,20 @@ function Project () {
                                     )}
                             </p>
                             <p className='info'>Coded By: {project.creator}</p>
-                            <p className='info' onClick={() => window.location.href = `${project.gitLink}`}>
-                                <a>
-                                    Go to GitHub Repository
-                                </a>
-                                &nbsp;
-                                |
-                                &nbsp;
-                                <a href={project.downloadLink}>
-                                    Download Project
-                                </a>
+                            <p className='info'>
+                                <span onClick={() => window.location.href = `${project.gitLink}`}>
+                                    <a href={project.gitLink}>Go to GitHub Repository</a>
+                                </span>
+                                {isAuthenticated && (
+                                    <>
+                                    <span>
+                                        &nbsp;|&nbsp;
+                                    </span>
+                                    <span>
+                                        <a href={project.downloadLink}>Download Project</a>
+                                    </span>
+                                    </>
+                                )}
                             </p>
                         </div>
                     </div>

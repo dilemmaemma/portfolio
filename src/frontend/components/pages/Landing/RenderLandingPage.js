@@ -24,14 +24,17 @@ function RenderLandingPage(props) {
         <div className="main">
             <div className="header">
             <div className="header-text-container">
-                <h1>Asylum Office Grant Rate Tracker</h1>
+                <h1>Emma's Portfolio Page</h1>
                 <h3>
-                The Asylum Office Grant Rate Tracker provides asylum seekers,
-                researchers, policymakers, and the public an interactive tool to
-                explore USCIS data on Asylum Office decisions
+                    This website showcases Emma's projects, whether they be personal, collab, or school related through BloomTech. Thanks for stopping by!
+                </h3>
+                <h3>
+                    If you would like to download code directly from the site or demo the code, please create an account first. Otherwise, you can go through GitHub to view the code.
                 </h3>
                 <LoginButton />
-                <LogoutButton />
+                {
+                    isAuthenticated && <LogoutButton />
+                }
             </div>
             </div>
         </div>
