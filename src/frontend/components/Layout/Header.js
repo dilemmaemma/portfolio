@@ -5,7 +5,8 @@ import Logo from '../../styles/Images/TechImage.png';
 import { colors } from '../../styles/data_vis_colors';
 import { useAuth0 } from '@auth0/auth0-react';
 
-const { primary_accent_color } = colors;
+// const { primary_accent_color } = colors;
+const { backgroundColor, header_links } = colors;
 
 function HeaderContent() {
   const { isAuthenticated } = useAuth0();
@@ -15,7 +16,7 @@ function HeaderContent() {
         display: 'flex',
         justifyContent: 'space-between',
         width: '100%',
-        backgroundColor: primary_accent_color,
+        backgroundColor: backgroundColor,
       }}
     >
       <div className="hrf-logo">
@@ -25,8 +26,11 @@ function HeaderContent() {
         <Link to="/" style={{ color: '#E2F0F7', paddingRight: '75px' }}>
           Home
         </Link>
-        <Link to="/projects" style={{ color: '#E2F0F7' }}>
+        <Link to="/projects" style={{ color: header_links, paddingRight: '75px' }}>
           Projects
+        </Link>
+        <Link to="/settings" style={{ color: header_links }}>
+          Settings
         </Link>
         {isAuthenticated && (
           <Link

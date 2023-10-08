@@ -12,6 +12,7 @@ import About from './components/pages/About/About';
 import Project from './components/pages/Project/Project';
 import Dashboard from './components/pages/Auth0/Dashboard';
 import Support from './components/pages/Support/Support';
+import Settings from './components/pages/Settings/Settings';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import FooterContent from './components/Layout/FooterContent';
 import SubFooter from './components/Layout/SubFooter';
@@ -62,6 +63,7 @@ export function App() {
                 <Route path="/projects" element={<Project />} />
                 {isAuthenticated && <Route path="/dashboard" element={<Dashboard />} />}
                 <Route path='/support' element={<Support />} />
+                <Route path='/settings' element={<Settings />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>
             <Footer
