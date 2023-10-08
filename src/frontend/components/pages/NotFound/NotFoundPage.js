@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CodingCat from '../../../styles/Images/CodingKitty.png'
+import '../../../styles/styles.css'
+import CodingCat from '../../../styles/Images/CodingKitty_Background.png'
 
 const NotFoundPage = () => {
   return (
-    <div>
+    <div className='image-container' id='error'>
         <img src={CodingCat} alt='Error Page'></img>
-        <h1>404 Page Not Found</h1>
-        <Link to="/">
-            <button>Back To Home</button>
-        </Link>
+        <div className='overlay-text'>
+          <h1>404 Page Not Found</h1>
+          <Link to="/">
+              <button className='btn'>Back To Home</button>
+          </Link>
+        </div>
     </div>
   );
 };

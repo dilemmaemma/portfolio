@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import {
     BrowserRouter as Router,
     Routes,
@@ -22,11 +22,13 @@ import { colors } from './styles/data_vis_colors';
 
 const { primary_accent_color } = colors;
 
-ReactDom.render(
+const root = createRoot(document.getElementById('root'));
+
+root.render(
     <Router>
         <Auth0Provider
-            domain={`${process.env.REACT_APP_AUTH0_DOMAIN}`} // Auth0 domain
-            clientId={`${process.env.REACT_APP_AUTH0_CLIENT_ID}`} // Auth0 client ID
+            domain={`dev-4fvmmq4mwx6cnf68.us.auth0.com`} // Auth0 domain
+            clientId={`MqLaOYbuRIqIlw4wVtBJHX3CzUIUpBlN`} // Auth0 client ID
             authorizationParams={{
                 redirect_uri: window.location.origin, // Redirect URI after authentication
             }}
@@ -36,7 +38,6 @@ ReactDom.render(
             </React.StrictMode>
         </Auth0Provider>
     </Router>,
-    document.getElementById('root')
 );
 
 export function App() {

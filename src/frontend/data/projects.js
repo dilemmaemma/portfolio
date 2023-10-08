@@ -1,4 +1,4 @@
-export default projects = [
+export const projects = [
     {
         name: 'Minesweeper',
         description: 'A classic game of minesweeper, coded in React.js',

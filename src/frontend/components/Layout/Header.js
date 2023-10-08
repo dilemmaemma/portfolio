@@ -19,9 +19,7 @@ function HeaderContent() {
       }}
     >
       <div className="hrf-logo">
-        <a href="https://www.humanrightsfirst.org/">
-          <Image width={100} src={Logo} preview={false} alt="HRF logo white" />
-        </a>
+        <Image width={75} src={Logo} preview={false} alt="HRF logo white" />
       </div>
       <div>
         <Link to="/" style={{ color: '#E2F0F7', paddingRight: '75px' }}>
