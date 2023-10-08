@@ -1,6 +1,7 @@
 #error {
     margin: 0;
     padding: 0;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,14 +9,16 @@
 }
 
 .image-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire screen */
-    object-position: center center; /* Center the image horizontally and vertically */
-  }
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.full-screen-image {
+    width: 100%; /* Cover entire container width */
+    height: 100%; /* Maintain aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
   
 .overlay-text {
     position: absolute;
@@ -48,6 +51,7 @@
     font-size: 3vh;
     font-family: 'Roboto', 'Geneva', Verdana, sans-serif;
     padding: 1.5% 3% 1.5% 3%;
+    cursor: pointer;
 }
 
 .btn:hover {
