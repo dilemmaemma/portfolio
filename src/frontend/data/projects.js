@@ -16,6 +16,7 @@ export const projects = [
             'Node.js',
             'Express.js',
             'Axios',
+            'Knex.js'
             
         ],
         gitLink: 'https://dilemmaemma.github.com/minesweeper/',
@@ -23,14 +24,14 @@ export const projects = [
     },
     {
         name: 'HRF Asylum Grant Rate Tracker',
-        description: 'A React.js application that tracks the asylum grant rates in the United States',
+        description: 'A React.js application that tracks the asylum grant rates globally',
         construction: false,
         image: 'https://static8.depositphotos.com/1378583/988/v/450/depositphotos_9881312-stock-illustration-helping-hand.jpg',
         creator: 'BloomTech and Emma',
         languages: [
             'HTML',
             'CSS',
-            'JavaScript'
+            'JavaScript |'
         ],
         dependencies: [
             'React.js',
@@ -38,5 +39,61 @@ export const projects = [
             'Axios',
             'Auth0',
         ],
+        gitLink: 'https://github.com/dilemmaemma/asylum-rg-fe-starter',
+        downloadLink: 'https://github.com/dilemmaemma/asylum-rg-fe-starter/archive/master.zip'
+    },
+    {
+        name: 'ELBC Website Reconstruction',
+        description: "A reconstructed website for my parents' church",
+        construction: true,
+        image: 'https://cdn.subsplash.com/images/3BCJGZ/_source/d949514c-e926-43b3-b149-2176fda80f05/image.png',
+        creator: 'Emma',
+        languages: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+        ],
+        dependencies: [
+            'React.js',
+            'Node.js',
+            'Express.js',
+            'Axios',
+            'Knex.js'
+        ],
+        gitLink: 'https://github.com/dilemmaemma/ELBC_Reconstruction',
+        downloadLink: 'https://github.com/dilemmaemma/ELBC_Reconstruction/archive/master.zip'
+    },
+    {
+        name: 'Node Server Testing',
+        description: 'Rudimentary back-end API for the Minesweeper application using Jest automatic testing',
+        construction: false,
+        creator: 'Emma',
+        languages: [
+            'Javascript'
+        ],
+        dependencies: [
+            'Node.js',
+            'Express.js',
+            'Jest'
+        ],
+        gitLink: 'https://github.com/dilemmaemma/node-testing2-project',
+        downloadLink: 'https://github.com/dilemmaemma/node-testing2-project/archive/master.zip'
+    },
+    {
+        name: 'Password Hashing and Web Authentication API',
+        description: 'API that helps validate user input through password hashing and storing info in a SQL database',
+        construction: false,
+        creator: 'Emma',
+        languages: [
+            'Javascript',
+            'SQL'
+        ],
+        dependencies: [
+            'Node.js',
+            'Express.js',
+            'Knex.js'
+        ],
+        gitLink: 'https://github.com/dilemmaemma/Sprint15-Challenge',
+        downloadLink: 'https://github.com/dilemmaemma/Sprint15-Challenge/archive/master.zip'
     }
 ]

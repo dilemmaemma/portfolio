@@ -25,8 +25,8 @@ function HeaderContent() {
         <Link to="/" style={{ color: '#E2F0F7', paddingRight: '75px' }}>
           Home
         </Link>
-        <Link to="/graphs" style={{ color: '#E2F0F7' }}>
-          Graphs
+        <Link to="/projects" style={{ color: '#E2F0F7' }}>
+          Projects
         </Link>
         {isAuthenticated && (
           <Link
