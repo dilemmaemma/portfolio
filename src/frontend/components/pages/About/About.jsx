@@ -2,7 +2,6 @@ import React from 'react';
 import AboutHeader from '../../Layout/AboutHeader.jsx';
 import { dependencies, languages, technicals, toLearn, contacts } from '../../../data/skills.js'
 import '../../../styles/About.less';
-import { REACT_APP_PUBLIC_URL } from '../../../data/environmental.js';
 
 const About = () => {
 
