@@ -29,9 +29,6 @@ function HeaderContent() {
         <Link to="/projects" style={{ color: header_links, paddingRight: '75px' }}>
           Projects
         </Link>
-        <Link to="/settings" style={{ color: header_links, paddingRight: '75px' }}>
-          Settings
-        </Link>
         <Link to="/about" style={{ color: header_links }}>
           About
         </Link>
