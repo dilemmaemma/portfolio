@@ -3,9 +3,11 @@ import ProjectsHeader from '../../Layout/ProjectsHeader.jsx';
 import { projects } from '../../../data/projects';
 import { useAuth0 } from '@auth0/auth0-react';
 import '../../../styles/RenderLandingPage.less';
+import { colors } from '../../../styles/data_vis_colors.js';
 
 function Project () {
     const { isAuthenticated } = useAuth0();
+    const { text_color } = colors
 
     const scrollToTop = () => {
         document.body.scrollTop = 0;
@@ -101,7 +103,7 @@ function Project () {
                 ))}
             </div>
             <div>
-                <p onClick={() => scrollToTop()} className="back-to-top" style={{ color: 'white' }}>
+                <p onClick={() => scrollToTop()} className="back-to-top" style={{ color: text_color }}>
                     Back To Top ^
                 </p>
             </div>

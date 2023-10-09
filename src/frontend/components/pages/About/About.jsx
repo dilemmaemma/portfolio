@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutHeader from '../../Layout/AboutHeader.jsx';
 import '../../../styles/About.less';
 
 const About = () => {
@@ -10,18 +11,8 @@ const About = () => {
 
     return (
         <div className='about-me-page'>
-            <header className='page-header'>
-                <h1>About Me</h1>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href='#contact'>Contact</a>
-                        </li>
-                        <li>
-                            <a href='#terms'>Privacy Policy</a>
-                        </li>
-                    </ul>
-                </nav>
+            <header>
+                <AboutHeader />
             </header>
 
             <main className='page-content'>
