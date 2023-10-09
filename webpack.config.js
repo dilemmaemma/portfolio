@@ -105,6 +105,19 @@ const config = {
             },
         ],
       },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              // Output file name and path
+              name: '[name].[ext]',
+              outputPath: 'public/', // Output directory within your build folder
+            },
+          },
+        ],
+      },
     ],
   },
 }

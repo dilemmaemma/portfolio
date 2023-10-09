@@ -1,13 +1,14 @@
 import { Button, Space, Layout } from 'antd';
 import React from 'react';
 import { colors } from '../../styles/data_vis_colors';
+import { REACT_APP_PUBLIC_URL } from '../../data/environmental';
 
 import '../../styles/RenderLandingPage.less';
 const { primary_accent_color } = colors;
 
 function SubFooter() {
     const { Footer } = Layout;
-    const base_url = 'http://localhost:3000'; // Change this before releasing production version
+    const base_url = REACT_APP_PUBLIC_URL;
     const button_links_by_text = {
       'About Me': `${base_url}/about`,
       'Contact': `${base_url}/about#contact`,

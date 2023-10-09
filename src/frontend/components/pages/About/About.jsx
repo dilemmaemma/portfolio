@@ -1,6 +1,8 @@
 import React from 'react';
 import AboutHeader from '../../Layout/AboutHeader.jsx';
+import { dependencies, languages, technicals, toLearn, contacts } from '../../../data/skills.js'
 import '../../../styles/About.less';
+import { REACT_APP_PUBLIC_URL } from '../../../data/environmental.js';
 
 const About = () => {
 
@@ -17,18 +19,108 @@ const About = () => {
 
             <main className='page-content'>
                 <section className='section'>
-                    <h1>About Me</h1>
+                    <h1>About</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet elit eget lacus venenatis posuere.
-                        Vestibulum suscipit ante sit amet lorem fringilla, non laoreet purus volutpat. Fusce eget vehicula tortor.
+                        <h2>About Me:</h2>
+                        <p>
+                            After graduating from the University of North Texas with my Bachelor's in finance, I worked in the field at the Bank of New York Mellon. 
+                            Soon after my graduation, I learned that finance was not for me, and began looking at other options. 
+                            After finding Bloom Institute of Technology, I started working on getting my certificate in full-stack web development, where I recently completed the program in October. 
+                            I am learning that programming is much more my niche, along with problem solving and mathematical computation and patterns.
+                        </p>
+                        <br />
+                        <h2>Technical Skills:</h2>
+                        <ul>
+                            {technicals.map((technical, index) => (
+                                <li key={index}>
+                                    {technical}
+                                </li>
+                            ))}
+                        </ul>
+                        <br />
+                        <h2>Languages:</h2>
+                        <ul>
+                            {languages.map((language, index) => (
+                                <li key={index}>
+                                    {language}
+                                </li>
+                            ))}
+                        </ul>
+                        <br />
+                        <h2>Dependencies and Frameworks:</h2>
+                        <ul>
+                            {dependencies.map((dependency, index) => (
+                                <li key={index}>
+                                    {dependency}
+                                </li>
+                            ))}
+                        </ul>
+                        <br />
+                        <h2>Experience:</h2>
+                        <p>
+                            While having no official coding job experience, I believe that results speak far louder than individual experience. 
+                            As such, I hope to leverage my coding results to gain invaluable experience working the industry.
+                        </p>
+                        <br />
+                        <h2>Next Moves:</h2>
+                        <p>
+                            I am currently seeking remote job opportunities in front-end or full-stack web development specializing in React and/or RDBMS.
+                            Given the leniency of the hiring manager, I am also open to hybrid work in the Philadelphia/Manhattan area, 
+                            as long as the hiring manager will let me work remote until I complete my move to Philly.
+                        </p>
+                        <br />
+                        <h2>Additional Information:</h2>
+                        <ul>
+                            <li>
+                                Pronouns: she/her
+                            </li>
+                            <li>
+                                I am currently working on: A <a href='http://github.com/dilemmaemma/minesweeper'>React minesweeper clone</a> 
+                                with a friend to showcase experience in server development, in addition to skills in advanced React, RDBMS, and API construction.
+                            </li>
+                            <li>
+                                I am currently learning: C# and ASP.NET
+                            </li>
+                        </ul>
+                        <br />   
+                        <h2>To Learn:</h2>
+                        <ul>
+                            {toLearn.map((learn, index) => (
+                                <li key={index}>
+                                    {learn}
+                                </li>
+                            ))}
+                        </ul>
+                        <br />
+                        <h2>View My Resume:</h2>
+                        <ul>
+                            <li>
+                                <a href='https://docs.google.com/document/d/1PeV59uCPIIv2Keb7n7MuXiqeg1urrnm_/edit?usp=sharing&ouid=104778651520500424936&rtpof=true&sd=true'>
+                                    Google Drive Link
+                                </a>
+                            </li>
+                            <li>
+                                <a href='https://www.dropbox.com/scl/fi/ogelyjyy89q39c623sjss/Henderson_Resume.pdf?rlkey=tqonv2ztrkktng9syhysknbjy&dl=0'>
+                                    Dropbox Link
+                                </a>
+                            </li>
+                        </ul>
                     </p>
                 </section>
 
                 <section className='section' id='contact'>
                     <h1>Contact</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet elit eget lacus venenatis posuere.
-                        Vestibulum suscipit ante sit amet lorem fringilla, non laoreet purus volutpat. Fusce eget vehicula tortor.
+                        You can add me on socials, or reach me at many places, listed below:
+                        <ul>
+                            {contacts.map((contact, index) => (
+                                <li key={index}>
+                                    {contact.method}:
+                                    &nbsp;
+                                    <a href={`${contact.link}`}>{contact.name}</a>
+                                </li>
+                            ))}
+                        </ul>
                     </p>
                 </section>
 
@@ -45,7 +137,7 @@ const About = () => {
                             By accessing or using my website, you consent to the practices described in this Privacy Policy. If you do not agree with the terms of this Privacy Policy, please do not use my website or services.
                         </p>
                         <br />
-                        <h2>Information We Collect</h2>
+                        <h2>Information I Collect</h2>
                         <p>
                             I may collect the following types of information when you visit my website or use my services:
                             <br />
@@ -124,30 +216,6 @@ const About = () => {
                     </p>
                 </div>
             </main>
-            {/* <div className='aboutMe'>
-                <h1>About Me:</h1>
-            </div>
-            <div className='section' id='contact'>
-                <h1>Contact:</h1>
-                <div className='text'>
-                    You can reach me and view my work at multiple places:
-                    <pre style={{fontFamily: 'Roboto', fontSize: '16px', marginLeft: '20px'}}>
-                        <br/>
-                        Github:
-                        <br/>
-                        LinkedIn:
-                        <br/>
-                        CodeSignal:
-                        <br/>
-                        Email:
-                        <br/>
-                        Phone Number:
-                    </pre>
-                </div>
-            </div>
-            <div id='terms'>
-                <h1>Privacy Policy:</h1>
-    </div> */}
         </div>
     );
 };
