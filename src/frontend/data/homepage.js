@@ -5,6 +5,9 @@ import node from '../styles/Images/nodejs-header.jpg'
 import jest from '../styles/Images/Jest.png'
 import jwt from '../styles/Images/JWT.jpg'
 import selfie from '../styles/Images/71322555388__22ED2073-00E3-4EDC-ABBC-148634AF6C6E.jpeg'
+import unt from '../styles/Images/UNT.jpg'
+import bloomtech from '../styles/Images/bloomtech.png'
+import aoa from '../styles/Images/aoa.jpg'
 
 export const gitLink = 'http://www.github.com/dilemmaemma'
 
@@ -51,7 +54,7 @@ export const skills = [ // Beginner: 0-50, Intermediate: 50-70, Pro: 70-90, Expe
         knowledge: 75
     },
     {
-        skill: 'Node/Express',
+        skill: 'Node & Express',
         knowledge: 65
     }
 ]
@@ -115,13 +118,21 @@ export const education = [
         university: 'University of North Texas',
         major: 'Finance',
         program: 'BBA',
-        years: '2018-2022'
+        years: '2018-2022',
+        image: unt
     },
     {
         university: 'BloomTech',
         major: 'Full-Stack',
         program: 'Certificate',
-        years: 'May 2023 - October 2023'
+        years: 'May 2023 - October 2023',
+        image: bloomtech
+    },
+    {
+        university: 'Alpha Omega Academy',
+        program: 'High School Diploma',
+        years: '2014 - 2018',
+        image: aoa
     }
 ]
 
@@ -156,3 +167,19 @@ export const experience = [
         ]
     }
 ]
+
+export const languages = {
+    frontend: [
+        'HTML5, CSS3, & LESS',
+        'JavaScript & React',
+    ],
+    backend: [
+        'Node & Express',
+        'SQLite, MySQL, & Knex',
+    ],
+    frameworks: [
+        'Redux',
+        'Axios',
+        'Auth0'
+    ]
+}

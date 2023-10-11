@@ -2,19 +2,12 @@ import React from 'react';
 import axios from 'axios';
 
 import '../../../styles/RenderLandingPage.less';
-import Minesweeper from '../../../styles/Images/MinesweeperClassic.png'
-import HumanRights from '../../../styles/Images/HumanRights.jpg'
-import bcrypt from '../../../styles/Images/bcrypt-logo.jpg'
-import node from '../../../styles/Images/nodejs-header.jpg'
-import jest from '../../../styles/Images/Jest.png'
-import jwt from '../../../styles/Images/JWT.jpg'
-import selfie from '../../../styles/Images/71322555388__22ED2073-00E3-4EDC-ABBC-148634AF6C6E.jpeg'
 
 import { Button } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 
-import { about, education, experience, gitLink, header, latestProject, latestProjects, locationInfo, skills, skillsIntro } from '../../../data/homepage'
+import { about, education, experience, gitLink, header, latestProject, latestProjects, locationInfo, skills, skillsIntro, languages } from '../../../data/homepage'
 
 function RenderLandingPage(props) {
     const scrollToTop = () => {
@@ -39,6 +32,51 @@ function RenderLandingPage(props) {
                 </div>
             </div>
             <div className='home-info'>
+                <span className='block profile-block'>
+                    <img src={header.image} />
+                    <div className='profile'>
+                        <div>
+                            <h1>{header.name}</h1>
+                            {header.links.map((link, index) => (
+                                <a href={link} key={index}>
+                                    {index !== 0 ? ' | ' : ''}
+                                    <span>
+                                        {header.names[index]}
+                                    </span>
+                                </a>
+                            ))}
+                        </div>
+                        <div className='special'>
+                            <div className='special-category'>
+                                <h3>Frontend</h3>
+                                <hr />
+                                {languages.frontend.map((language, index) => (
+                                    <p key={index} className='special-info'>
+                                        {language}
+                                    </p>
+                                ))}
+                            </div>
+                            <div className='special-category'>
+                                <h3>Backend</h3>
+                                <hr />
+                                {languages.backend.map((language, index) => (
+                                    <p key={index} className='special-info'>
+                                        {language}
+                                    </p>
+                                ))}
+                            </div>
+                            <div className='special-category'>
+                                <h3>Frameworks and Dependencies</h3>
+                                <hr />
+                                {languages.frameworks.map((language, index) => (
+                                    <p key={index} className='special-info'>
+                                        {language}
+                                    </p>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </span>
                 <div className='container'>
                     <div className='column first-column'>
                         <div className='block'>
@@ -202,6 +240,52 @@ function RenderLandingPage(props) {
                                     </svg>
                                     More on GitHub
                                 </a>
+                        </div>
+                    </div>
+                </div>
+                <div className='container'>
+                    <div className='column first-column'>
+
+                    </div>
+                    <div className='column second-column' style={{ marginTop: '-293%' }}>
+                        <div className='block'>
+                            <h2>Education</h2>
+                            <br/>
+                            {education.map((schools, index) => (
+                                <div key={index}>
+                                    <h3>
+                                        <svg className="svg-inline--fa fa-graduation-cap" 
+                                            aria-hidden="true" focusable="false" data-prefix="fas" 
+                                            data-icon="graduation-cap" role="img" xmlns="http://www.w3.org/2000/svg" 
+                                            viewBox="0 0 640 512" data-fa-i2svg=""
+                                        >
+                                            <path fill="currentColor" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 
+                                                140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 
+                                                291.9v28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 
+                                                448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 
+                                                4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5V291.9c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 
+                                                29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 
+                                                12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 
+                                                15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 
+                                                35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 
+                                                6s-23.5-2-34.5-6L143.3 262.6 128 408z"
+                                            />
+                                        </svg>
+                                        {schools.program} {schools.major && `in ${schools.major}`}
+                                    </h3>
+                                    <p style={{ marginLeft: '10.5%', fontSize: '14px', color: 'grey' }}>
+                                        <strong>
+                                            {schools.university}
+                                        </strong>
+                                        &nbsp;
+                                        ({schools.years})
+                                    </p>
+                                    <br/>
+                                    <img src={schools.image} alt={schools.university} className='school-img'/>
+                                    <br />
+                                    <br/>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </div>
