@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'; // Change :hover prop to a different color. Current background is :hover color
 import ProjectsHeader from '../../Layout/ProjectsHeader.jsx';
 import { projects } from '../../../data/projects';
 import { useAuth0 } from '@auth0/auth0-react';

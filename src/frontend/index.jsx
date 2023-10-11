@@ -10,7 +10,6 @@ import NotFoundPage from './components/pages/NotFound/NotFoundPage';
 import LandingPage from './components/pages/Landing/RenderLandingPage';
 import About from './components/pages/About/About.jsx';
 import Project from './components/pages/Project/Project';
-import Dashboard from './components/pages/Auth0/Dashboard';
 import Support from './components/pages/Support/Support';
 import { Auth0Provider, useAuth0 } from '@auth0/auth0-react';
 import FooterContent from './components/Layout/FooterContent';
@@ -60,7 +59,6 @@ export function App() {
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Project />} />
-                {isAuthenticated && <Route path="/dashboard" element={<Dashboard />} />}
                 <Route path='/support' element={<Support />} />
                 <Route path='*' element={<NotFoundPage />} />
             </Routes>

@@ -40,7 +40,7 @@ function FooterContent() {
     <div>
       {/*logo*/}
       <div>
-        <Image width={75} src={Logo} preview={false} alt="HRF logo white" />
+        <Image width={75} src={Logo} preview={false} alt="Dilemma Cat Coding Logo" />
       </div>
       <Space className="footer-container" direction="horizontal">
         <Space direction="vertical" align="start">
