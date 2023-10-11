@@ -68,4 +68,9 @@
     --font-acumin-pro-regular: 'AcuminProRegular';
     --font-beatrice-regular: 'BeatriceRegular';
     --font-moneta-bold: 'MonetaBold';
+
+    /* For the skills portion of the homepage */
+    --bs-secondary-bg: #e9ecef;
+    --bs-border-radius: 0.375rem;
+    --bs-box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
 }

@@ -83,7 +83,7 @@ function RenderLandingPage(props) {
                                 </li>
                                 <li>
                                     <svg 
-                                        class="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" 
+                                        className="svg-inline--fa fa-link" aria-hidden="true" focusable="false" data-prefix="fas" 
                                         data-icon="link" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" 
                                         data-fa-i2svg=""
                                     >
@@ -119,6 +119,57 @@ function RenderLandingPage(props) {
                                     Go to the repo
                                 </a>
                             </div>
+                        </div>
+                    </div>
+                    <div className='column second-column' style={{ marginTop: '-18%'}}>
+                        <div className='block'>
+                            <h2>Skills</h2>
+                            <p>{skillsIntro}</p>
+                            <br />
+                            {skills.map((skill, index) => (
+                                <div key={index}>
+                                    <h3 className='level-title'>
+                                        {skill.skill}
+                                        <span className="level-label" data-bs-toggle="tooltip" data-bs-placement="left" >
+                                            <svg className="svg-inline--fa fa-circle-info" aria-hidden="true" focusable="false" 
+                                                data-prefix="fas" data-icon="circle-info" role="img" xmlns="http://www.w3.org/2000/svg" 
+                                                viewBox="0 0 512 512" data-fa-i2svg=""
+                                            >
+                                                <path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 
+                                                    336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 
+                                                    24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 
+                                                    24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+                                                />
+                                            </svg>
+                                            {skill.knowledge > 89 ? 'Expert' : skill.knowledge > 69 ? 'Pro' : skill.knowledge > 49 ? 'Intermediate' : 'Beginner'}
+                                        </span>
+                                    </h3>
+                                    <div className='level-bar progress'>
+                                        <div className='progress-bar level-bar-inner'
+                                            role="progressbar" style={{ width: `${skill.knowledge}%`}}
+                                            aria-valuenow={skill.knowledge} aria-valuemin='0'
+                                            aria-valuemax='100' />
+                                    </div>
+                                    <br/>
+                                </div>
+                            ))}
+                                <a href={gitLink}>
+                                    <svg 
+                                        class="svg-inline--fa fa-up-right-from-square" 
+                                        aria-hidden="true" focusable="false" data-prefix="fas" 
+                                        data-icon="up-right-from-square" role="img" xmlns="http://www.w3.org/2000/svg" 
+                                        viewBox="0 0 512 512" data-fa-i2svg=""
+                                    >
+                                        <path fill="currentColor" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 
+                                            34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 
+                                            141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 
+                                            32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 
+                                            14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 
+                                            32-32s-14.3-32-32-32H80z"
+                                        />
+                                    </svg>
+                                    More on GitHub
+                                </a>
                         </div>
                     </div>
                 </div>

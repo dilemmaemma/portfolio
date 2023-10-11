@@ -39,7 +39,7 @@ export const skillsIntro = 'I have skills in a variety of front-end and back-end
 
 export const skills = [ // Beginner: 0-50, Intermediate: 50-70, Pro: 70-90, Expert: 90-100
     {
-        skill: 'JavaScript/React',
+        skill: 'JavaScript & React',
         knowledge: 90
     },
     {
@@ -47,7 +47,7 @@ export const skills = [ // Beginner: 0-50, Intermediate: 50-70, Pro: 70-90, Expe
         knowledge: 70
     },
     {
-        skill: 'SQLite/MySQL/Knex',
+        skill: 'SQLite, MySQL, & Knex',
         knowledge: 75
     },
     {

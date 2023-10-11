@@ -26,6 +26,10 @@ a:hover {
     color: @link-hover-color
 }
 
+.main {
+    background-color: @link-hover-color
+}
+
 .header {
     background-color: @main-color;
     display:flex;
@@ -255,16 +259,18 @@ a:hover {
 }
 
 .home-info {
-    margin-top: -8%
+    margin-top: -8%;
+    margin-bottom: 3%;
 }
 
 /* Define the grid layout for the webpage */
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr; /* Two columns, first column is twice as wide as the second */
-    grid-gap: 20px; /* Gap between grid items */
+    grid-gap: 0; /* Gap between grid items */
     padding: 20px;
-    margin-bottom: -30px;
+    margin-bottom: -25px;
+    border-radius: 5px;
 }
 
 .column {
@@ -283,6 +289,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 20px 50px 20px 50px;
 }
   
 /* Style for the first column */
@@ -310,8 +317,9 @@ a:hover {
 }
 
 .block h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin-bottom: 10px;
+    color: @main-color;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
@@ -339,6 +347,20 @@ a:hover {
     list-style: none;
 }
 
+.progress {
+    --bs-progress-height: 1rem;
+    --bs-progress-font-size: 0.75rem;
+    --bs-progress-bg: var(--bs-secondary-bg);
+    --bs-progress-border-radius: var(--bs-border-radius);
+    --bs-progress-box-shadow: var(--bs-box-shadow-inset);
+    --bs-progress-bar-color: #fff;
+    --bs-progress-bar-bg: #0d6efd;
+    --bs-progress-bar-transition: width 0.6s ease;
+    display: flex;
+    overflow: hidden;
+    border-radius: var(--bs-progress-border-radius)
+}
+
 .svg-inline--fa {
     display: var(--fa-display,inline-block);
     height: 1em;
@@ -346,4 +368,41 @@ a:hover {
     vertical-align: -0.125em;
     margin-right: 15px;
     color: #CCD1D6;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    transition: var(--bs-progress-bar-transition);
+}
+
+.level-bar {
+    height: 15px;
+    background: #E8E8E8;
+}
+
+.level-bar-inner {
+    height: 15px;
+    background: #66cb8c;
+}
+
+.level-label {
+    color: #ccd1d6;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Lato", arial, sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.level-title {
+    font-size: 16px;
+    position: relative;
+    margin-top: 0;
 }
