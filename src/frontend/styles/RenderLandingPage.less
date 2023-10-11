@@ -254,14 +254,17 @@ a:hover {
     text-decoration: none;
 }
 
+.home-info {
+    margin-top: -8%
+}
+
 /* Define the grid layout for the webpage */
 .container {
     display: grid;
     grid-template-columns: 2fr 1fr; /* Two columns, first column is twice as wide as the second */
     grid-gap: 20px; /* Gap between grid items */
     padding: 20px;
-    margin-top: -10%;
-    margin-bottom: 8%;
+    margin-bottom: -30px;
 }
 
 .column {
@@ -280,21 +283,23 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 100%;
-    min-width: none;
 }
   
 /* Style for the first column */
 .first-column .block {
     flex-grow: 1; /* Allow the block to grow to fill available space */
     max-width: 100%; /* Allow the block to shrink if needed */
-    margin-right: 2%
+    max-height: 100%;
+    margin-left: 5%;
+    margin-right: 2%;
 }
   
 /* Style for the second column */
 .second-column .block {
-    flex-grow: 1; /* Allow the block to grow to fill available space */
-    max-width: 100%; /* Allow the block to shrink if needed */
+    flex-grow: .5; /* Allow the block to grow to fill available space */
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 5% !important;
 }
 
 .block h2 {
@@ -318,6 +323,12 @@ a:hover {
 }
 
 .block li {
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'AcuminProMedium', 'Roboto', 'Geneva', Verdana, sans-serif;  
+}
+
+.block a {
     line-height: 1.6;
     font-size: 16px;
     font-family: 'AcuminProMedium', 'Roboto', 'Geneva', Verdana, sans-serif;  
