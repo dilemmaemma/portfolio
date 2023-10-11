@@ -62,7 +62,7 @@ const config = {
         ],
       },
       {
-        test: /\.(png|jpg|gif)$/i, // Match image files
+        test: /\.(png|jpg|gif|jpeg)$/i, // Match image files
         use: [
           {
             loader: 'file-loader',

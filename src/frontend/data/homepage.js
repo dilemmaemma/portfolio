@@ -1,10 +1,10 @@
-import Minesweep from '../../../styles/Images/MinesweeperClassic.png'
-import HumanRights from '../../../styles/Images/HumanRights.jpg'
-import bcrypt from '../../../styles/Images/bcrypt-logo.jpg'
-import node from '../../../styles/Images/nodejs-header.jpg'
-import jest from '../../../styles/Images/Jest.png'
-import jwt from '../../../styles/Images/JWT.jpg'
-import selfie from '../../../styles/Images/71322555388__22ED2073-00E3-4EDC-ABBC-148634AF6C6E.jpeg'
+import Minesweep from '../styles/Images/MinesweeperClassic.png'
+import HumanRights from '../styles/Images/HumanRights.jpg'
+import bcrypt from '../styles/Images/bcrypt-logo.jpg'
+import node from '../styles/Images/nodejs-header.jpg'
+import jest from '../styles/Images/Jest.png'
+import jwt from '../styles/Images/JWT.jpg'
+import selfie from '../styles/Images/71322555388__22ED2073-00E3-4EDC-ABBC-148634AF6C6E.jpeg'
 
 export const gitLink = 'http://www.github.com/dilemmaemma'
 

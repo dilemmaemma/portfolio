@@ -253,3 +253,86 @@ a:hover {
 .aboutInfo nav ul li a{
     text-decoration: none;
 }
+
+/* Define the grid layout for the webpage */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two columns, first column is twice as wide as the second */
+    grid-gap: 20px; /* Gap between grid items */
+    padding: 20px;
+    margin-top: -10%;
+    margin-bottom: 8%;
+}
+
+.column {
+    flex: 1; /* Distribute available space equally between columns */
+    display: flex;
+    flex-direction: column; /* Stack blocks vertically within each column */
+    border-radius: 5px;
+}
+  
+/* Style for the white blocks */
+.block {
+    background-color: @white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100%;
+    min-width: none;
+}
+  
+/* Style for the first column */
+.first-column .block {
+    flex-grow: 1; /* Allow the block to grow to fill available space */
+    max-width: 100%; /* Allow the block to shrink if needed */
+    margin-right: 2%
+}
+  
+/* Style for the second column */
+.second-column .block {
+    flex-grow: 1; /* Allow the block to grow to fill available space */
+    max-width: 100%; /* Allow the block to shrink if needed */
+}
+
+.block h2 {
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.block h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.block p {
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'AcuminProMedium', 'Roboto', 'Geneva', Verdana, sans-serif;
+}
+
+.block li {
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: 'AcuminProMedium', 'Roboto', 'Geneva', Verdana, sans-serif;  
+}
+
+.list-unstyled {
+    text-decoration: none;
+    list-style: none;
+}
+
+.svg-inline--fa {
+    display: var(--fa-display,inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+    margin-right: 15px;
+    color: #CCD1D6;
+}
