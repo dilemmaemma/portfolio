@@ -132,7 +132,7 @@ function RenderLandingPage(props) {
                                             <br/>
                                             <a href={project.gitLink}>
                                                 <svg 
-                                                    class="svg-inline--fa fa-up-right-from-square" 
+                                                    className="svg-inline--fa fa-up-right-from-square" 
                                                     aria-hidden="true" focusable="false" data-prefix="fas" 
                                                     data-icon="up-right-from-square" role="img" xmlns="http://www.w3.org/2000/svg" 
                                                     viewBox="0 0 512 512" data-fa-i2svg=""
@@ -153,7 +153,7 @@ function RenderLandingPage(props) {
                             </div>
                         </div>                     
                     </div>
-                    <div className='column second-column' style={{ marginTop: '-18%'}}>
+                    <div className='column second-column' style={{ marginTop: '-18%', height: '50%'}}>
                         <div className='block'>
                             <h2>Skills</h2>
                             <p>{skillsIntro}</p>
@@ -187,7 +187,7 @@ function RenderLandingPage(props) {
                             ))}
                                 <a href={gitLink}>
                                     <svg 
-                                        class="svg-inline--fa fa-up-right-from-square" 
+                                        className="svg-inline--fa fa-up-right-from-square" 
                                         aria-hidden="true" focusable="false" data-prefix="fas" 
                                         data-icon="up-right-from-square" role="img" xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 0 512 512" data-fa-i2svg=""
