@@ -78,8 +78,8 @@
     "webpack-cli": "^5.1.4"
   },
   "engines": {
-    "node": ">=16.x",
-    "npm": ">=8.x"
+    "node": ">=18.x",
+    "npm": ">=10.x"
   },
   "eslintConfig": {
     "extends": "react-app"
