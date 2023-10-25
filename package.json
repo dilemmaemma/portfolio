@@ -11,15 +11,6 @@
     "start": "npm run backend",
     "server": "nodemon index.js",
     "webpack": "process.env.NODE_ENV=production webpack",
-    "migrate": "knex migrate:latest",
-    "rollback": "knex migrate:rollback",
-    "reset": "npm run rollback && npm run migrate && npm run seed",
-    "seed": "knex seed:run",
-    "initialmig": "npx knex migrate:make initial-migration",
-    "cleanup": "knex seed:run --specific=01-cleanup.js",
-    "resetdb": "npm run rollback && npm run migrate && npm run seed",
-    "migup": "knex migrate:up",
-    "migdown": "knex migrate:down",
     "stopserver": "npx kill-port 9000"
   },
   "repository": {
