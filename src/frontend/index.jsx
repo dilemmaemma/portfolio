@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react'
 import { createRoot } from 'react-dom/client';
 import {
     BrowserRouter as Router,
@@ -34,6 +35,7 @@ root.render(
         >
             <React.StrictMode>
                 <App />
+                <Analytics />
             </React.StrictMode>
         </Auth0Provider>
     </Router>,
