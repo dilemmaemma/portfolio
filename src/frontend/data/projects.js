@@ -46,7 +46,7 @@ export const projects = [
         name: 'React Weather App',
         description: 'A React.js application that displays the current weather',
         construction: true,
-        image: 'https://repository-images.githubusercontent.com/142146797/9465c500-1dd1-11eb-8e90-7f7d74182fb8',
+        image: 'https://i.pinimg.com/736x/3c/86/4c/3c864c47d4bed53e9a0342ca99d782b0.jpg',
         creator: 'Emma',
         languages: [
             'HTML',
