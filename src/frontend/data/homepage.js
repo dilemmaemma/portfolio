@@ -4,7 +4,7 @@ import bcrypt from '../styles/Images/bcrypt-logo.jpg'
 import node from '../styles/Images/nodejs-header.jpg'
 import jest from '../styles/Images/Jest.png'
 import jwt from '../styles/Images/JWT.jpg'
-import selfie from '../styles/Images/71322555388__22ED2073-00E3-4EDC-ABBC-148634AF6C6E.jpeg'
+import selfie from '../styles/Images/IMG_1442.jpg'
 import unt from '../styles/Images/UNT.jpg'
 import bloomtech from '../styles/Images/bloomtech.png'
 import aoa from '../styles/Images/aoa.jpg'
@@ -56,6 +56,10 @@ export const skills = [ // Beginner: 0-50, Intermediate: 50-70, Pro: 70-90, Expe
     {
         skill: 'Node & Express',
         knowledge: 65
+    },
+    {
+        skill: 'Java',
+        knowledge: 30,
     }
 ]
 
@@ -176,6 +180,7 @@ export const languages = {
     backend: [
         'Node & Express',
         'SQLite, MySQL, & Knex',
+        'Java'
     ],
     frameworks: [
         'Redux',

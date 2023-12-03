@@ -1,2 +1,8 @@
 node_modules
 .env
+env
+eslintrc
+.eslintrc
+gitignore
+.gitignore
+package-lock.json

@@ -74,11 +74,11 @@ const About = () => {
                                 Pronouns: she/her
                             </li>
                             <li>
-                                I am currently working on: A <a href='http://github.com/dilemmaemma/minesweeper'>React minesweeper clone</a> 
-                                with a friend to showcase experience in server development, in addition to skills in advanced React, RDBMS, and API construction.
+                                I am currently working on: A <a href='http://github.com/dilemmaemma/react-weather-app'>React weather app </a> 
+                                to further develop skills working with external APIs and learning about new frameworks and how to implement them in my code.
                             </li>
                             <li>
-                                I am currently learning: C# and ASP.NET
+                                I am currently learning: Java and Springboot
                             </li>
                         </ul>
                         <br />   

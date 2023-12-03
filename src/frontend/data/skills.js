@@ -20,7 +20,8 @@ export const languages = [
     'HTML',
     'CSS',
     'JavaScript',
-    'SQL',
+    'Java',
+    'SQL'
 ];
 
 export const technicals = [

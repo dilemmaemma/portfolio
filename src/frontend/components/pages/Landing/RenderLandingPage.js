@@ -247,7 +247,7 @@ function RenderLandingPage(props) {
                     <div className='column first-column'>
 
                     </div>
-                    <div className='column second-column' style={{ marginTop: '-293%' }}>
+                    <div className='column second-column' style={{ marginTop: '-277%' }}>
                         <div className='block'>
                             <h2>Education</h2>
                             <br/>
